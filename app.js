@@ -15,8 +15,8 @@ takeQuiz.addEventListener('click', () => {
     const likes = prompt('Does Chelsea like to party?');
     const bones = prompt('Has Chelsea broken her back?');
     let count = 0;
-    if (ifYes(from)) count++;
-    if (ifYes(likes)) count++;
-    if (ifYes(bones)) count++;
+    if (!isYes(from)) count++;
+    if (!isYes(likes)) count++;
+    if (isYes(bones)) count++;
     total.textContent = `Congratulations ${name}, you got ${count} answers correct!`
 });

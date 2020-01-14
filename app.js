@@ -1,0 +1,1 @@
+const takeQuiz = document.getElementById('takeQuiz');

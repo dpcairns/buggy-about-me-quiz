@@ -18,5 +18,17 @@ takeQuiz.addEventListener('click', () => {
     if (!isYes(from)) count++;
     if (!isYes(likes)) count++;
     if (isYes(bones)) count++;
-    total.textContent = `Congratulations ${name}, you got ${count} answers correct!`
+    total.textContent = `Congratulations ${name}, you got ${count} answers correct!`;
+    scoreStyle(count);
 });
+
+//stretch goal; make page display differently based on good/bad scores
+function scoreStyle(count) {
+    const total = document.getElementById('total');
+    if (count > 2) {
+        total.style.backgroundColor = 'yellow';
+    } else {
+        total.style.backgroundColor = 'purple';
+        total.style.color = 'white'
+    }
+};

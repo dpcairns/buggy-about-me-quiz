@@ -1,0 +1,60 @@
+main {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bolder;
+    background-color: #ea4b15;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.center-object {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 200px;
+    border-radius: 100px;
+}
+
+#bio {
+    max-width: 600px;
+    background-color: #90c52d;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.list {
+    max-width: 16em;
+    border-radius: 15px;
+    background-color: #90c52d;
+    padding: 10px 0px 10px 50px;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+}
+
+#takeQuiz {
+    
+}
+
+/* DELETE LATER
+### Design Stretch Goals
+- Search for an online HTML validator and submit your code to it.
+- Visit [this page](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and read about Chrome's built-in accessibility auditing tools. Following the instructions under the "View the contrast ratio of a text element in the Color Picker" heading, examine the contrast ratio values of your heading and paragraph tags. Modify your code until you can achieve a ratio that gets two check marks.
+DELETE LATER */
+

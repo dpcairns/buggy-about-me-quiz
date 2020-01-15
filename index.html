@@ -5,73 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Poppins&display=swap" rel="stylesheet">
-    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Guessing Game</title>
 </head>
-<main>
-    <header>
-        <h1>Some facts about Chelsea</h1>
-    </header>
 
-    <body>
-        <div class="center-object">
-            <img class="image" src="https://ca.slack-edge.com/T6FCZF1HR-UQG2HHQJC-560d3a9639f4-512">
-        </div>
-        <br>
+<header>
+    <h1>Guess the Number!</h1>
+    <h2>Beat the Machine!</h2>
+</header>
+
+<body>
+    <div id="instructions">
+        <h3>Instructions:</h3>
+        <p>Guess a number between 1 and 20. The game will tell you if your guess is too high or too low, and you can use this to adjust your next guess. You have only four guesses--good luck!</p>
+    </div>
+
+    <p>
         
-        <!--introductory paragraph-->
-        <div id="bio" class="center-object">
-            <p>
-            Chelsea is a software developer in Portland, OR. She is originally from Wisconsin and has previously worked as a professor, a nonprofit project manager, and a US foreign policy influencer. She loves to bike, hike, read, and knit. She is extremely enthusiastic about food.
-            </p>
-        </div><!--end of intro paragraph-->
-        
-        <!--a few of my favorite things-->
-        <div class="center-object">
-            <section>  
-                <h2>Things Chelsea wouldn't want to live without:</h2>
-                <ul class="list">
-                    <li>Fresh tomatoes</li>
-                    <li>Bicycles</li>
-                    <li>Fiddle music</li>
-                    <li>Dogs</li>
-                    <li>Solitude</li>
-                </ul>
-            </section>
-        </div>
-        <!--end of list-->
+        <input id="userNumber" type="number" min="1" max="20">
+        <button>Submit Guess</button><br><br>
+        Guesses remaining: <span id="guessesRemaining"></span>
+        <span id="numRel"></span>
+        <span id="winLose"></span>
+    </p>
+    
 
-        <!--list of broken bones-->
-        <div class="center-object">
-            <section>
-                <h2>Bones Chelsea has broken (in chronological order):</h2>
-                <ol class="list">
-                    <li>Right wrist</li>
-                    <li>Left elbow</li>
-                    <li>Left wrist</li>
-                    <li>Back</li>
-                    <li>Toe</li>
-                    <li>Finger</li>
-                    <li>Left hand</li>
-                </ol>
-            </section>
-        </div>
-        <!--end of list-->
+    <script type="module" src="app.js"></script>
+</body>
 
-        <!--submit button-->
-        <div id="button">
-        <button id="takeQuiz">Take Quiz</button>
-        <br>
-        <br>
-        </div>
-        <hr>
-
-        <!--quiz results-->
-        <div id="total"></div>
-        
-        <!--import script-->
-        <script type="module" src="app.js"></script>
-    </body>
-</main>
 </html>
+
+<!--Using HTML and CSS, design the look and feel of the guessing game. At a minimum you will need:
+
+Page layout (title, header, etc.)
+Explain the rules to the user
+An input of type number for specifying the guess
+A button to click to submit the guess
+Display of number of tries remaining
+Display of guess too high or too low
+Display of lose and win result-->

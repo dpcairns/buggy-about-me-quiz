@@ -7,8 +7,6 @@ header {
 }
 
 main {
-    /* color: white; */
-    /* background-image: image('alexander-popov-3InMDrsuYrk-unsplash.jpg'); */
     font-family: 'Black Ops One', cursive;
     max-width: 80%;
     border-radius: 15px;
@@ -19,15 +17,28 @@ main {
 
 #instructions {
     max-width: 75%;
-    background-color: rgb(226, 6, 90);
+    font-size: 12px;
+    background-color: rgb(228, 24, 102);
     border-radius: 15px;
     padding: 10px;
     margin-left: 12.5%;
 }
 
+@media (min-width:800px) {
+    #instructions {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width:1000px) {
+    #instructions {
+      font-size: 16px;
+    }
+  }
+
 #game {
     max-width: 75%;
-    background-color: yellow;
+    background-color: rgb(250, 236, 46);
     border-radius: 15px;
     padding: 10px;
     margin-left: 12.5%;
@@ -35,7 +46,7 @@ main {
 
 #numRel {
     max-width: 70%;
-    background-color: rgb(217, 4, 236);
+    background-color: rgb(226, 50, 241);
     font-size: 16px;
     border-radius: 20px;
     padding: 10px;
@@ -43,7 +54,7 @@ main {
 
 #winLose {
     max-width: 70%;
-    background-color: rgb(255, 94, 0);
+    background-color: rgb(253, 107, 22);
     font-size: 16px;
     border-radius: 20px;
     padding: 10px;

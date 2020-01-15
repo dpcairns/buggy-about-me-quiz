@@ -1,4 +1,55 @@
-.instructions {
+* {
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+}
 
+main {
+    /* color: white; */
+    /* background-image: image('alexander-popov-3InMDrsuYrk-unsplash.jpg'); */
+    font-family: 'Black Ops One', cursive;
+    max-width: 80%;
+    border-radius: 15px;
+    background-color: slategray;
+    padding: 10px;
+}
+
+
+#instructions {
+    max-width: 75%;
+    background-color: rgb(226, 6, 90);
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 12.5%;
+}
+
+#game {
+    max-width: 75%;
+    background-color: yellow;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 12.5%;
+}
+
+#numRel {
+    max-width: 70%;
+    background-color: rgb(217, 4, 236);
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#winLose {
+    max-width: 70%;
+    background-color: rgb(255, 94, 0);
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
 }
 

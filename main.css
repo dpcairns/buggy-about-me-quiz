@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 @media (max-width:1000px) {
     header {
       font-size: 14px;
@@ -19,17 +23,18 @@ header {
 }
 
 .center-object {
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
-    width: 50%;
 }
 
 .image {
+    margin: 5px, auto;
     width: 200px;
     border-radius: 100px;
 }
 
 #bio {
-    max-width: 600px;
     background-color: #90c52d;
     border-radius: 15px;
     padding: 10px;
@@ -42,7 +47,6 @@ h2 {
 }
 
 .list {
-    max-width: 16em;
     border-radius: 15px;
     background-color: #90c52d;
     padding: 10px 0px 10px 50px;
@@ -60,9 +64,6 @@ h2 {
     background-color: rgb(253, 197, 42);
 }
 
-/* DELETE LATER
-### Design Stretch Goals
-- Search for an online HTML validator and submit your code to it.
-- Visit [this page](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and read about Chrome's built-in accessibility auditing tools. Following the instructions under the "View the contrast ratio of a text element in the Color Picker" heading, examine the contrast ratio values of your heading and paragraph tags. Modify your code until you can achieve a ratio that gets two check marks.
-DELETE LATER */
-
+.hidden {
+    display: none;
+}

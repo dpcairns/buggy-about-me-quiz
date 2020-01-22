@@ -1,4 +1,4 @@
-import compareNumbers from './compareNumbers.js'
+import compareNumbers from './compareNumbers.js';
 
 const button = document.getElementById('button');
 const guessesRemaining = document.getElementById('guessesRemaining');
@@ -33,10 +33,10 @@ button.addEventListener('click', () => {
         numRel.style.visibility = 'hidden';
         button.disabled = true;
     } else if (compareNumbers(userNumber, correctNumber) === 1) {
-        numRel.classList.remove('hidden')
+        numRel.classList.remove('hidden');
         numRel.textContent = tooHigh;
     } else if (compareNumbers(userNumber, correctNumber) === -1) {
-        numRel.classList.remove('hidden')
+        numRel.classList.remove('hidden');
         numRel.textContent = tooLow;
     }
 });

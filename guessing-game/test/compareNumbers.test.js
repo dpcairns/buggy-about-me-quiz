@@ -1,6 +1,7 @@
 // IMPORT MODULES under test here:
 // import example from '../src/example.js';
-import compareNumbers from '../compareNumbers.js'
+import compareNumbers from '../compareNumbers.js';
+
 const test = QUnit.test;
 
 test('guess was correct', function(assert) {
@@ -34,5 +35,3 @@ test('guess was too low', function(assert) {
     const result = compareNumbers(guess, correctNumber);
     assert.equal(result, expected);
 });
-
-//SUPER STRETCH: Actually test for invalid input. You should throw an error if either parameter is not a number. Consult the QUnit docs for how to test for an exception.

@@ -8,4 +8,4 @@ function compareNumbers(userNumber, correctNumber) {
     } else if (userNumber < correctNumber) {
         return -1;
     }
-};
+}

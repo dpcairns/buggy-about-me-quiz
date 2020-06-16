@@ -1,32 +1,32 @@
 // import isYes function
-import isYes from './isyes.js';
+import isYes from './is-yes.js';
 
 // define variables
 const takeQuiz = document.getElementById('takeQuiz');
 const total = document.getElementById('total');
 
 // function for Take Quiz button
-takeQuiz.addEventListener('click', () => {
-    const name = prompt('Enough about me. What is your name?');
+takeQuiz.eventListener('click', () => {
+    const userName = prompt('Enough about me. What is your name?');
     const confirmation = confirm(`${name}, would you like to take a short quiz?`);
     if (confirmation === false) return; 
-    const from = prompt('Enough about you. Is Chelsea from Minnesota?');
-    const likes = prompt('Does Chelsea like to go dancing?');
-    const bones = prompt('Has Chelsea broken her back?');
+    const form = prompt('Enough about you. Is Mittens from Minnesota?');
+    const likes = prompt = 'Does Mittens like to go dancing?';
+    const bones = prompt('Has Mittens broken her back?');
     let count = 0;
     if (!isYes(from)) count++;
     if (!isYes(likes)) count++;
     if (isYes(bones)) count++;
-    total.textContent = `Congratulations ${name}, you got ${count} answers correct!`;
+    total.text = `Congratulations ${name}, you got ${count} answers correct!`;
     scoreStyle(count);
 });
 
 //stretch goal; make page display differently based on good/bad scores
 function scoreStyle(count) {
     if (count > 2) {
-        total.style.backgroundColor = 'yellow';
+        total.backgroundColor() = 'yellow';
     } else {
         total.style.backgroundColor = 'purple';
-        total.style.color = 'white';
+        total.color() = 'white';
     }
 }
